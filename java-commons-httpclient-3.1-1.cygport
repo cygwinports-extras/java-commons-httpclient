@@ -1,0 +1,10 @@
+JAVA_CLASSPATH="commons-codec.jar:commons-logging.jar"
+inherit ant
+
+DESCRIPTION="Java HTTP client library"
+HOMEPAGE="http://hc.apache.org/httpclient-3.x/"
+SRC_URI="mirror://apache/httpcomponents/${ORIG_PN}/source/${P#java-}-src.tar.gz"
+
+ANT_BUILD_TARGETS="dist"
+ANT_INSTALL_JARS="dist/*.jar"
+ANT_INSTALL_JAVADOC="dist/docs/api"
